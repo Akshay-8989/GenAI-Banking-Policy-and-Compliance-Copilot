@@ -1,0 +1,169 @@
+KNOW YOUR CUSTOMER (KYC) POLICY DOCUMENT
+SecureBank Financial Services
+Version 3.2 | Effective Date: January 1, 2024
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PURPOSE AND SCOPE
+
+This document outlines the Know Your Customer (KYC) policy for SecureBank. KYC
+is a mandatory regulatory process that requires financial institutions to verify
+the identity of their clients. This policy is applicable to all branches, subsidiaries,
+and employees of SecureBank and covers all customer types including individuals,
+corporates, and institutional clients.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. REGULATORY FRAMEWORK
+
+This policy is governed by the following regulatory guidelines:
+- Reserve Bank of India (RBI) Master Direction on KYC, 2016 (updated 2023)
+- Prevention of Money Laundering Act (PMLA), 2002
+- Foreign Exchange Management Act (FEMA), 1999
+- Financial Action Task Force (FATF) Recommendations
+- Securities and Exchange Board of India (SEBI) KYC Regulations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. CUSTOMER IDENTIFICATION DOCUMENTS
+
+3.1 Individual Customers
+
+All individual customers must submit the following Officially Valid Documents (OVDs):
+
+Identity Proof (any one):
+- Passport (valid, not expired)
+- Aadhaar Card (12-digit UIDAI number)
+- Voter Identity Card
+- Driving License (valid)
+- NREGA Job Card
+- National Population Register letter
+
+Address Proof (any one, dated within 3 months):
+- Utility bill (electricity, water, telephone)
+- Bank account statement from another bank
+- Letter from a gazetted officer confirming address
+- Property/municipal tax receipt
+
+Financial Proof:
+- PAN Card (mandatory for all transactions above INR 50,000)
+- Form 60/61 if PAN is not available
+
+3.2 Corporate/Business Customers
+
+For companies and business entities, the following documents are required:
+- Certificate of Incorporation
+- Memorandum and Articles of Association
+- Board resolution authorising account opening
+- List of authorised signatories with specimen signatures
+- PAN of the entity
+- Address proof of registered office
+- KYC documents of all beneficial owners holding 25% or more stake
+- Latest audited financial statements
+
+3.3 Non-Resident Indians (NRI)
+
+NRI customers must provide:
+- Valid passport with visa/residency permit
+- Overseas address proof
+- Indian address proof (if available)
+- PAN card or Form 60
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. CUSTOMER DUE DILIGENCE (CDD)
+
+4.1 Standard CDD
+
+Standard Customer Due Diligence applies to all low-risk and medium-risk customers:
+- Verify customer identity using OVDs
+- Understand the purpose and nature of the business relationship
+- Conduct ongoing monitoring of the account
+- Periodic KYC refresh every 10 years for low-risk, 8 years for medium-risk
+
+4.2 Enhanced Due Diligence (EDD)
+
+Enhanced Due Diligence is mandatory for high-risk customers including:
+- Politically Exposed Persons (PEPs) and their family members
+- Customers in high-risk geographies as notified by FATF
+- Non-face-to-face customers
+- Customers with complex ownership structures
+- Those with adverse media coverage or regulatory actions
+
+EDD measures include:
+- Senior management approval for account opening
+- Additional identification documents
+- Source of funds/wealth declaration
+- More frequent monitoring (every 2 years)
+- Transaction pattern analysis
+
+4.3 Simplified CDD
+
+Simplified KYC applies only to:
+- Small accounts (transactions under INR 50,000 per year)
+- Jan Dhan Yojana accounts
+- Accounts opened under PMJDY scheme
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. RECORD KEEPING AND RETENTION
+
+5.1 Retention Period
+
+KYC documents must be retained for:
+- Minimum 5 years from the date of account closure
+- Minimum 5 years from the date of the transaction for occasional customers
+- All records must be readily retrievable within 2 working days
+
+5.2 Format Requirements
+
+Records may be maintained in:
+- Original physical documents
+- Certified true copies
+- Digital/scanned copies with electronic signature
+
+5.3 Data Security
+
+- All KYC data must be stored in encrypted format
+- Access restricted to authorised compliance and operations staff
+- CCTV footage at branches to be retained for minimum 6 months
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. KYC REFRESH AND PERIODIC UPDATION
+
+Customer KYC must be refreshed at the following intervals:
+- Low Risk: Every 10 years
+- Medium Risk: Every 8 years
+- High Risk: Every 2 years
+
+Triggers for immediate KYC refresh:
+- Significant change in transaction pattern
+- Customer reported in adverse media
+- Request from law enforcement agencies
+- Account dormancy exceeding 2 years
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7. PENALTIES FOR NON-COMPLIANCE
+
+Non-compliance with KYC regulations may result in:
+- Monetary penalties up to INR 1 crore per violation under PMLA
+- Suspension or cancellation of banking license
+- Personal liability for Compliance Officer and senior management
+- Regulatory action by RBI including directions, restrictions, and fines
+- Criminal prosecution under PMLA 2002 (imprisonment up to 7 years)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8. RESPONSIBILITIES
+
+Compliance Officer: Overall responsibility for KYC policy implementation
+Branch Manager: Ensure all accounts comply with KYC norms
+Operations Team: Document collection, verification, and storage
+IT Department: Maintain secure systems for KYC data management
+Internal Audit: Annual review of KYC compliance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Document Control: Compliance Department | Review Date: January 2025

@@ -1,0 +1,154 @@
+ANTI-MONEY LAUNDERING (AML) POLICY
+SecureBank Financial Services
+Version 2.5 | Effective Date: January 1, 2024
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. INTRODUCTION
+
+Money laundering is the process of making illegally obtained money appear legitimate.
+SecureBank is committed to complying with all applicable AML laws and regulations.
+This policy establishes procedures to detect, prevent, and report money laundering
+and related financial crimes.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. TRANSACTION MONITORING AND REPORTING THRESHOLDS
+
+2.1 Cash Transaction Reports (CTR)
+
+All cash transactions above the following thresholds must be reported to the
+Financial Intelligence Unit – India (FIU-IND):
+
+- INR 10,00,000 (10 lakhs) or equivalent in foreign currency in a single transaction
+- Multiple cash transactions by a single customer in a day totalling INR 10 lakhs
+- All cross-border wire transfers of INR 5 lakhs and above
+
+Reporting Deadline: Within 7 working days from the last day of the month in which
+the transaction occurred.
+
+2.2 Suspicious Transaction Reports (STR)
+
+A Suspicious Transaction Report must be filed when:
+- The transaction has no apparent economic justification
+- The customer is reluctant to provide identification
+- Unusual patterns inconsistent with the customer's profile
+- Transactions involving jurisdictions known for money laundering
+
+STR Filing Deadline: Within 24 hours of detection of the suspicious transaction,
+irrespective of the transaction amount.
+
+2.3 Non-Profit Organisation Transactions (NPO)
+
+Transactions with non-profit organisations above INR 5 lakhs must be reported
+if there is suspicion of terrorist financing or misuse of funds.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. RED FLAGS AND SUSPICIOUS ACTIVITY INDICATORS
+
+The following are indicators of potential money laundering:
+
+3.1 Customer Behaviour Red Flags
+- Customer provides inconsistent or false information
+- Customer is evasive about the source of funds
+- Customer requests to break down large transactions to avoid reporting
+- Customer shows unusual interest in bank's reporting requirements
+- Customer appears nervous or in a hurry to complete transactions
+
+3.2 Transaction Red Flags
+- Sudden large cash deposits with no business justification
+- Multiple transfers to/from high-risk countries
+- Rapid movement of funds (same day credit and debit)
+- Round-number transactions repeatedly (e.g., exactly 9,99,000)
+- Deposits followed by immediate full withdrawal
+- Use of multiple accounts to funnel funds
+
+3.3 Business Account Red Flags
+- Business transacts in sectors inconsistent with its registration
+- Turnover inconsistent with the nature of the business
+- Large number of incoming transfers from unrelated third parties
+- Payments to suppliers in high-risk jurisdictions without clear business reason
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. SANCTIONS SCREENING
+
+4.1 Screening Requirements
+
+All customers and transactions must be screened against:
+- UN Security Council Sanctions Lists
+- RBI Consolidated Sanctions List
+- OFAC Specially Designated Nationals (SDN) List
+- EU Consolidated Financial Sanctions List
+- Domestic terrorist designation lists under UAPA
+
+4.2 Screening Frequency
+- New customers: Before account opening
+- Existing customers: Daily batch screening
+- Transactions: Real-time screening for all wire transfers above INR 50,000
+
+4.3 Hit Management
+
+Positive matches must be escalated to the Compliance team within 1 hour.
+Accounts with confirmed sanctions matches must be frozen immediately and
+reported to RBI within 24 hours.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. POLITICALLY EXPOSED PERSONS (PEP)
+
+5.1 Definition
+
+A Politically Exposed Person (PEP) is an individual who holds or has held a
+prominent public function, including:
+- Heads of state or government
+- Senior politicians and government officials
+- Senior judicial officials
+- Senior executives of state-owned corporations
+- High-ranking military officials
+
+Family members and close associates of PEPs are treated as PEPs.
+
+5.2 PEP Handling Procedures
+- Senior management approval required before opening PEP account
+- Enhanced due diligence at onboarding and every 2 years thereafter
+- Source of wealth declaration mandatory
+- All transactions above INR 1 lakh require Relationship Manager review
+- Ongoing adverse media monitoring
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. EMPLOYEE TRAINING AND AWARENESS
+
+All bank employees must complete:
+- AML Foundation Training: Within 30 days of joining
+- Annual AML Refresher Training: Every calendar year
+- Role-specific training for Compliance, Operations, and Relationship Managers
+- Certification must be maintained in employee records
+
+Failure to complete mandatory AML training is a disciplinary offence.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7. TIPPING OFF PROHIBITION
+
+It is a criminal offence to inform (tip off) a customer or any third party that:
+- A suspicious transaction report has been filed about them
+- They are under investigation for money laundering
+
+Employees who tip off customers face immediate termination and criminal prosecution
+under Section 8A of the Prevention of Money Laundering Act, 2002.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8. RECORD RETENTION
+
+All AML records including STRs, CTRs, and transaction monitoring records must be
+retained for a minimum of 5 years from the date of the report or transaction,
+whichever is later. Records must be available to regulatory authorities within
+2 working days of a request.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Document Control: AML Compliance Unit | Review Date: January 2025

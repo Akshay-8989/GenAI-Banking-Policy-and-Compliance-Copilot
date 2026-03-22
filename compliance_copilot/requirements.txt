@@ -1,0 +1,33 @@
+# GenAI Banking Policy & Compliance Copilot - Requirements
+# Python 3.10+
+
+# Core Framework
+langchain==0.2.16
+langchain-community==0.2.17
+langchain-core==0.2.39
+
+# PDF Processing
+pypdf==4.3.1
+pdfplumber==0.11.4
+
+# Embeddings (local, no API key needed)
+sentence-transformers==3.1.1
+
+# Vector Store
+faiss-cpu==1.8.0
+
+# LLM - Phi-2 local inference
+transformers==4.44.2
+torch==2.4.1
+accelerate==0.34.2
+einops==0.8.0
+
+# UI
+streamlit==1.38.0
+streamlit-chat==0.1.1
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.9.1
+tqdm==4.66.5
+numpy==1.26.4
