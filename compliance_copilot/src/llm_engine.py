@@ -2,86 +2,61 @@
 llm_engine.py
 -------------
 FR7 – AI Response Generation
-
-Loads Microsoft Phi-2 (or any causal-LM) locally via HuggingFace Transformers.
-Exposes a simple generate(prompt) interface used by the RAG pipeline.
-
-Phi-2 notes
------------
-* 2.7B parameters – runs comfortably on a modern CPU (slow) or GPU.
-* Best results with the "Instruct:" / "Output:" prompt format.
-* No API key required – weights are downloaded from HuggingFace Hub on first run.
+Loads Phi-2 from a LOCAL folder — zero internet, zero HuggingFace calls.
 """
 
 from __future__ import annotations
-
 import logging
+import os
 import threading
 from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-# Singleton lock so the model is only loaded once even if called from multiple threads.
-_load_lock = threading.Lock()
+_load_lock    = threading.Lock()
 _llm_instance: Optional["Phi2LLM"] = None
 
 
 class Phi2LLM:
     """
-    Wrapper around the Phi-2 causal language model.
-
-    Args:
-        model_name:     HuggingFace model ID (default: microsoft/phi-2).
-        max_new_tokens: Maximum tokens to generate per response.
-        temperature:    Sampling temperature (0.0–1.0). Lower → more factual.
-        device:         'cpu', 'cuda', or 'auto' (auto-detects GPU).
+    Loads Microsoft Phi-2 from a local folder on disk.
+    Pass the full local path, e.g.  r"D:\phi-2"
     """
 
     def __init__(
         self,
-        model_name:     str   = "microsoft/phi-2",
-        max_new_tokens: int   = 512,
+        model_path:     str,
+        max_new_tokens: int   = 256,
         temperature:    float = 0.1,
-        device:         str   = "auto",
     ):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
-        self.model_name     = model_name
+        self.model_path     = model_path
         self.max_new_tokens = max_new_tokens
         self.temperature    = temperature
+        self.device         = "cuda" if torch.cuda.is_available() else "cpu"
 
-        # Device selection
-        if device == "auto":
-            self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        else:
-            self.device = device
+        logger.info("Loading Phi-2 from LOCAL path: %s  on  %s", model_path, self.device)
 
-        logger.info("Loading Phi-2 model '%s' on %s …", model_name, self.device)
-
+        # local_files_only=True  → never touch the internet
         self.tokenizer = AutoTokenizer.from_pretrained(
-            model_name,
+            model_path,
             trust_remote_code=True,
+            local_files_only=True,
         )
+
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
+            model_path,
             torch_dtype=torch.float32 if self.device == "cpu" else torch.float16,
             device_map=self.device,
             trust_remote_code=True,
+            local_files_only=True,
         )
         self.model.eval()
-        logger.info("Phi-2 loaded successfully.")
+        logger.info("Phi-2 loaded successfully from local folder.")
 
     def generate(self, prompt: str) -> str:
-        """
-        Run the model on a prompt and return the generated text (excluding the prompt).
-
-        Args:
-            prompt: Full formatted prompt string.
-
-        Returns:
-            Generated answer string.
-        """
         import torch
 
         inputs = self.tokenizer(
@@ -95,7 +70,7 @@ class Phi2LLM:
             output_ids = self.model.generate(
                 **inputs,
                 max_new_tokens=self.max_new_tokens,
-                temperature=max(self.temperature, 1e-6),   # avoid zero
+                temperature=max(self.temperature, 1e-6),
                 do_sample=self.temperature > 0.0,
                 pad_token_id=self.tokenizer.eos_token_id,
                 eos_token_id=self.tokenizer.eos_token_id,
@@ -103,11 +78,10 @@ class Phi2LLM:
 
         # Decode only the newly generated tokens (skip prompt)
         new_ids = output_ids[0][inputs["input_ids"].shape[1]:]
-        answer  = self.tokenizer.decode(new_ids, skip_special_tokens=True)
-        return answer.strip()
+        return self.tokenizer.decode(new_ids, skip_special_tokens=True).strip()
 
 
-# ── Prompt Templates ──────────────────────────────────────────────────────────
+# ── Prompt Template ───────────────────────────────────────────────────────────
 
 COMPLIANCE_PROMPT_TEMPLATE = """\
 Instruct: You are a precise Banking Policy & Compliance AI assistant.
@@ -125,27 +99,31 @@ Output:\
 
 
 def build_prompt(context: str, question: str) -> str:
-    """Format the RAG prompt for Phi-2."""
     return COMPLIANCE_PROMPT_TEMPLATE.format(context=context, question=question)
 
 
 # ── Singleton accessor ────────────────────────────────────────────────────────
 
 def get_llm(
-    model_name:     str   = "microsoft/phi-2",
-    max_new_tokens: int   = 512,
+    model_name:     str   = None,
+    max_new_tokens: int   = 256,
     temperature:    float = 0.1,
 ) -> "Phi2LLM":
     """
-    Return the singleton Phi2LLM instance, loading it on first call.
-    Thread-safe.
+    Returns the singleton Phi2LLM instance.
+    model_name must be the full local folder path, e.g. r"D:\phi-2"
     """
     global _llm_instance
     if _llm_instance is None:
         with _load_lock:
-            if _llm_instance is None:   # double-checked locking
+            if _llm_instance is None:
+                if not model_name:
+                    raise ValueError(
+                        "model_name (local path to Phi-2 folder) must be set in config.py. "
+                        "Example:  PHI2_MODEL_NAME = r'D:\\phi-2'"
+                    )
                 _llm_instance = Phi2LLM(
-                    model_name=model_name,
+                    model_path=model_name,
                     max_new_tokens=max_new_tokens,
                     temperature=temperature,
                 )
